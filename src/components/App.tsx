@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { hot } from 'react-hot-loader';
+import s from './styles.module.scss';
 
 export interface IAppProps {
 	compiler: string;
@@ -9,7 +10,7 @@ export interface IAppProps {
 class App extends React.Component<IAppProps, {}> {
 	render() {
 		return (
-			<main role="main">
+			<main role="main" className={s.heading}>
 				<h1>
 					{this.props.framework} App with {this.props.compiler}
 				</h1>

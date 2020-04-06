@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import App from './App';
-import './styles.css';
+import App from './components/App';
+import './styles.module.scss';
 import DefaultErrorBoundary from './DefaultErrorBoundary';
 
 if (process.env.NODE_ENV !== 'production') {
