@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import propTypes from 'prop-types';
+import * as React from 'react';
 
-class DefaultErrorBoundary extends Component {
+class DefaultErrorBoundary extends React.Component {
 	state = {
 		isError: false,
 	};
@@ -9,10 +8,6 @@ class DefaultErrorBoundary extends Component {
 	static getDerivedStateFromError() {
 		return { isError: true };
 	}
-
-	static propTypes = {
-		children: propTypes.element.isRequired,
-	};
 
 	render() {
 		const { isError } = this.state;

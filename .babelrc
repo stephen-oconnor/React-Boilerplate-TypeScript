@@ -8,6 +8,7 @@
 				"corejs": "3"
 			}
 		],
+		"@babel/preset-typescript",
 		"@babel/preset-react"
 	],
 	"plugins": ["react-hot-loader/babel", "@babel/plugin-proposal-class-properties"]

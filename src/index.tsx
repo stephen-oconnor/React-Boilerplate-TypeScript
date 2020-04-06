@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import App from './App';
@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
 ReactDOM.render(
 	<React.StrictMode>
 		<DefaultErrorBoundary>
-			<App />
+			<App compiler={'TypeScript'} framework={'React'} />
 		</DefaultErrorBoundary>
 	</React.StrictMode>,
 	document.getElementById('app')
