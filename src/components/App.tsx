@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { hot } from 'react-hot-loader';
+import img from './image_cat.jpg';
 import s from './styles.module.scss';
 
 export interface IAppProps {
@@ -14,6 +15,7 @@ class App extends React.Component<IAppProps, {}> {
 				<h1>
 					{this.props.framework} App with {this.props.compiler}
 				</h1>
+				<img src={img} alt="Cat" />
 			</main>
 		);
 	}
